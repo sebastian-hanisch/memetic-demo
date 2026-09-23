@@ -170,7 +170,7 @@ m3.metric("Diversität am Ende", f"{result.diversity_history[-1]:.2f}", delta=f"
 m4.metric("Bewertungen der lokalen Suche", f"{result.ls_evaluations:,}".replace(",", "."), help="Summe aller Nachbarschafts-Bewertungen der 2-opt-Politur über den ganzen Lauf - der Preis von p_LS > 0.")
 
 st.markdown("**Diversität über die Generationen**")
-st.plotly_chart(build_diversity_curve(result.diversity_history), width="stretch")
+st.plotly_chart(build_diversity_curve(result.diversity_history), width="stretch", key="diversity_curve")
 
 st.markdown("---")
 
