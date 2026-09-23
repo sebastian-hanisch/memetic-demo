@@ -1,5 +1,7 @@
 # 🧬🔧 Memetischer Algorithmus – lokale Suche poliert die Population
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-memetic-demo.streamlit.app/)**
+
 Letztes Stück (11. von 11) der **Populations-Metaheuristiken-Linie** der "Konzepte"-Reihe im Portfolio von
 [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning. Die einzige
 **Konvergenzkante** der ganzen Linie: kombiniert [genetic-algorithm-demo](https://sebastianhanisch-genetic-algorithm-demo.streamlit.app/)
