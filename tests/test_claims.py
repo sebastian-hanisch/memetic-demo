@@ -55,7 +55,7 @@ def test_head_experiment_headline_claims():
     assert report["ga"]["ls_evaluations_mean"] == 0.0
     assert report["memetic"]["ls_evaluations_mean"] > 0.0
     assert report["memetic"]["best_median"] < report["ga"]["best_median"]
-    # gemessen: reines GA ~1009 km, voll memetisch ~485 km auf diesem Budget - deutlich mehr als 10 % Vorsprung
+    # gemessen: reines GA ~1018 km, voll memetisch ~485 km auf diesem Budget - deutlich mehr als 10 % Vorsprung
     improvement = (report["ga"]["best_median"] - report["memetic"]["best_median"]) / report["ga"]["best_median"]
     assert improvement > 0.10
 

@@ -49,8 +49,8 @@ kleinen Beispielen mit bekanntem lokalem Optimum) plus Brute-Force-Vergleich auf
 
 | Frage | Befund | Test |
 |---|---|---|
-| Wie viel besser ist voll memetisch als reines GA - und wie viel kostet das? | Auf einem knappen eigenen Budget findet voll memetisch eine um 52 % kürzere Tour als reines GA (1009 km → 485 km, Median über 20 Läufe) - aber dafür im Mittel rund 586.000 zusätzliche Nachbarschafts-Bewertungen der lokalen Suche (reines GA: keine). | `test_head_experiment_headline_claims` |
-| Wie stark hängen Qualität und Kosten von der Polierwahrscheinlichkeit $p_{LS}$ ab? | Schon $p_{LS}=0{,}1$ erfasst fast den gesamten Qualitätsgewinn (486,9 km, gegenüber 485,2 km bei $p_{LS}=1{,}0$) - die Kosten steigen dagegen über den ganzen Bereich weiter linear (rund 89.000 bei $p_{LS}=0{,}1$ bis rund 594.000 bei $p_{LS}=1{,}0$). Eine echte Sättigung, kein Freibier-Effekt. | `test_p_ls_experiment_headline_claims` |
+| Wie viel besser ist voll memetisch als reines GA - und wie viel kostet das? | Auf einem knappen eigenen Budget findet voll memetisch eine um 52 % kürzere Tour als reines GA (1018 km → 485 km, Median über 20 Läufe) - aber dafür im Mittel rund 586.000 zusätzliche Nachbarschafts-Bewertungen der lokalen Suche (reines GA: keine). | `test_head_experiment_headline_claims` |
+| Wie stark hängen Qualität und Kosten von der Polierwahrscheinlichkeit $p_{LS}$ ab? | Schon $p_{LS}=0{,}1$ erfasst hier den gesamten Qualitätsgewinn (Median 485,2 km, ebenso wie bei $p_{LS}=1{,}0$) - die Kosten steigen dagegen über den ganzen Bereich weiter linear (rund 72.000 bei $p_{LS}=0{,}1$ bis rund 586.000 bei $p_{LS}=1{,}0$). Eine echte Sättigung, kein Freibier-Effekt. | `test_p_ls_experiment_headline_claims` |
 | Wie nah kommt der Memetische Algorithmus ans echte Optimum? | Auf der kleinen Vergleichsinstanz (8 Stopps) trifft der Standardfall exakt das Brute-Force-Optimum (255,4 km, 0,0 % Abstand). | `test_kleine_instanz_preset_claims` |
 | Wie stark hängt der Abstand zum Optimum von der Populationsgröße ab (ohne Politur)? | Bei reinem GA ($p_{LS}=0$) auf der kleinen Instanz sinkt der Abstand mit wachsender Population, aber nicht ganz glatt (9,4 % bei Population 10 bis 0,0 % ab Population 60, mit einer nicht-monotonen Zwischenstufe bei 40) - ehrlich so berichtet, nicht zu einer glatten Kurve geglättet. | `test_pop_sweep_headline_claims` |
 
@@ -103,3 +103,7 @@ streamlit run app.py
 ```
 
 Gebaut mit Streamlit, Plotly und numpy.
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Populations-Metaheuristiken: GA bis Memetic](https://sebastianhanisch.net/konzepte-populations-metaheuristiken.html).
